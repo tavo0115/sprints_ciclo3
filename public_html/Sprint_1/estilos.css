@@ -9,52 +9,64 @@ and open the template in the editor.
 */
 
 .container {
+    text-align: center;
     display: grid; 
     grid-template-columns: 0.4fr 1fr 1fr; 
-    grid-template-rows: 0.5fr 1fr 1fr 0.5fr; 
+    grid-template-rows: 0.5fr 1fr 0.5fr 1; 
     gap: 0px 0px; 
-    grid-template-areas: 
+    grid-auto-flow: row;
+    grid-template-areas:
         "header header header"
         "landing_navbar section section"
         "landing_navbar section section"
-        "landing_navbar footer footer"; 
+        "landing_navbar footer footer";
 }
 
-.header { 
-    grid-area: header; 
-    border: 1px black solid;
+.header {
+    grid-area: header;
 }
 
-.section { 
-    grid-area: section; 
-    border: 1px black solid;
-}
-
-.landing_navbar { 
-    grid-area: landing_navbar; 
-    border: 1px black solid;
+.landing_navbar {
+    grid-area: landing_navbar;
+    background-color: aquamarine;
     display: grid; 
     grid-template-columns: 1fr; 
     grid-template-rows: 1fr 1fr; 
     gap: 0px 0px; 
-    grid-template-areas: 
-        "nav_01"
-        "nav_02"; 
-    text-align: center;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "nav01"
+        "nav02";
 }
 
-.nav_01 {
-    grid-area: nav_01;
-    border: 1px black solid;
+.nav01 {
+    grid-area: nav01;
 }
 
-.nav_02 {
-    grid-area: nav_02;
-    border: 1px black solid;
+.nav02 {
+    grid-area: nav02;
 }
 
-.footer { 
-    grid-area: footer; 
-    border: 1px black solid;
+.section {
+    grid-area: section;
+}
+
+.footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "article1 article2";
+}
+
+.article1 {
+    grid-area: article1;
+}
+
+.article2 {
+    grid-area: article2;
 }
 
