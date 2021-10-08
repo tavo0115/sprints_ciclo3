@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Registro</title>
+        <meta charset="UTF-8">
+        <meta name="title" content="El ttulo a ranquear en el motor">
+        <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam">
+        <script src="registro.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div>
+            <fieldset style="float: left;">
+                <form id="form_registro_usuario">
+                    <label for="in_usuario" >Usuario</label>
+                    <input id="in_usuario" type="text"/>
+                    <br/>
+                    <label for="in_contrasena" >Contraseña</label>
+                    <input id="in_contrasena" type="password"/>
+                    <br/>
+                    <button id="btn_enviar_registro">Enviar</button>
+                    <br/>
+                    <label for="tamano" >Tamaño</label>
+                    <input id="tamano" type="text"/>
+                    <br/>
+                    <button id="btn_filtrar" onclick="filtrarContrasena()">Filtrar</button>    
+                </form>
+            </fieldset>
+        </div>
+    </body>
+</html>

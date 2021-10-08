@@ -17,6 +17,7 @@ function validar_nombreUsuario(string){
     var validar1 = /\w{4,9}/;
     var valido = validar1.test(string);    
     return valido;
+    console.log(validar_nombreUsuario("Gava***"));
 }
 
 function validar_contrasena(string){    
