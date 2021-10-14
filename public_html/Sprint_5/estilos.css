@@ -1,0 +1,82 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+
+.container {
+    text-align: center;
+    display: grid; 
+    grid-template-columns: 0.4fr 1fr 1fr; 
+    grid-template-rows: 0.5fr 1fr 0.5fr 1; 
+    gap: 0px 0px; 
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header header header"
+        "landing_navbar section section"
+        "landing_navbar section section"
+        "landing_navbar footer footer";
+}
+
+.header {
+    grid-area: header;
+}
+
+.landing_navbar {
+    grid-area: landing_navbar;
+    background-color: aquamarine;
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-auto-flow: row;
+    grid-template-areas:
+        "nav01"
+        "nav02";
+}
+
+.nav01 {
+    grid-area: nav01;
+}
+
+.nav02 {
+    grid-area: nav02;
+}
+
+.section {
+    grid-area: section;
+}
+
+.footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "article1 article2";
+}
+
+.article1 {
+    grid-area: article1;
+}
+
+.article2 {
+    grid-area: article2;
+}
+
+#caja_formulario{
+    background-color: aquamarine;
+    float: left;
+}
+
+#form_registro_usuario{
+    background-color: aquamarine;
+}
+
+#login {
+    background-color: #0000FF;
+    color: #FFFFFF;
+    text-decoration: none;
+}
